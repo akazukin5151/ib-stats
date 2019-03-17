@@ -1,3 +1,7 @@
+'''
+You can find+replace "Group" with "Levels" to switch from G[1...6] to HL/SL and vice versa
+'''
+
 import altair as alt
 import pandas as pd
 
