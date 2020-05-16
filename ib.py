@@ -5,7 +5,7 @@ You can find+replace "Group" with "Levels" to switch from G[1...6] to HL/SL and 
 import altair as alt
 import pandas as pd
 
-data = pd.read_csv("/Users/Yuitere/Nextcloud/Maths/IB Stats/ib stats.csv")
+data = pd.read_csv("ib stats.csv")
 
 selection = alt.selection_multi(fields=['Group'])
 color = alt.condition(selection,
@@ -32,4 +32,4 @@ legend = alt.Chart(data).mark_point().encode(
 )
 
 chart = alt.hconcat(chart, legend)
-chart.save('/Users/Yuitere/Nextcloud/Maths/IB Stats/ib.html')
+chart.save('ib.html')
